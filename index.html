@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav-bar">
+        <div class="nav-left">
+          <div class="nav-logo">
+            <img src="./saas-logo.png" alt="" />
+          </div>
+          <p class="nav-item">About UIFry</p>
+          <p class="nav-item">Features</p>
+          <p class="nav-item">Resources</p>
+          <p class="nav-item">Company</p>
+        </div>
+        <div class="nav-right">
+          <p class="nav-right-item nav-demo">Get Demo</p>
+          <p class="nav-right-item">Contact Sales</p>
+          <p class="nav-right-item">
+            <img src="./icon.png" alt="" />
+          </p>
+        </div>
+      </div>
+
+      <!-- first-portion -->
+      <div class="main-body">
+        <div class="main-body-left">
+          <p class="main-body-stars">
+            <img src="./rating-stars.png" alt="" />
+          </p>
+          <p class="main-body-title">Seamless solution with our magic!</p>
+          <p class="main-body-subt">
+            UIFry is the project management platform that aims for teams to
+            achieve an efficient dream management
+          </p>
+          <p class="main-body-desc">
+            Start work efficiently with UIFry SaaS product
+          </p>
+          <button class="main-body-btn">Get Free Demo</button>
+          <div class="main-page-left-group">
+            <img src="./main-page-left-group.png" alt="" />
+          </div>
+        </div>
+        <div class="main-body-right">
+          <img src="./main-page-right.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="bg-1">
+      <img src="./bg-1.png" alt="" />
+    </div>
+    <!-- second-portion -->
+    <div class="second-portion">
+      <div class="second-portion-upper container">
+        <p class="second-por-title">
+          Choose from over 10+ cutting—edge products
+        </p>
+        <p class="second-por-subt">See all products</p>
+      </div>
+      <div class="second-por-imgs">
+        <img src="./second-por-img1.png" alt="" />
+        <img src="./second-por-img2.png" alt="" />
+        <img src="./second-por-img3.png" alt="" />
+        <img src="./second-por-img4.png" alt="" />
+      </div>
+    </div>
+
+    <!-- third-portion -->
+    <div class="third-portion container">
+      <div class="third-por-upper">
+        <div class="third-por-titles">
+          <p class="third-por-title1">Here's what our customer has to says</p>
+          <p class="third-por-title2">Read customer stories</p>
+        </div>
+        <div class="third-por-subts">
+          <p class="third-por-icon">
+            <img src="./third-por-icon.png" alt="" />
+          </p>
+          <p class="third-por-subt">
+            [short description goes in here] lorem ipsum is a placeholder text
+            to demonstrate.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- fourth-portion -->
+
+    <div class="fourth-portion" id="fourth-portion"></div>
+
+    <script>
+      let main = document.getElementById("fourth-portion");
+      let col = "";
+      for (let i = 0; i < 4; i++) {
+        col += `                <div class="col">
+    <h3>Amazing tool! Saved me months</h3>
+    <p>This is a placeholder for your testimonials and what your client has to say, put them here and make sure its 100% true and meaningful.</p>
+    <div class="info">
+        <img src="images/avatar.png" alt="">
+        <div class="info-text">
+            <p>John Master</p>
+            <p>Director,  UiFry.com</p>
+        </div>
+    </div>
+</div>`;
+      }
+      main.innerHTML = col;
+    </script>
+  </body>
+</html>
